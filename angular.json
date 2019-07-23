@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular-shopping": {
+    "Shopping-App": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular-shopping",
+            "outputPath": "dist/Shopping-App",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,10 +23,10 @@
               "src/assets"
             ],
             "styles": [
-             "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular-shopping:build"
+            "browserTarget": "Shopping-App:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular-shopping:build:production"
+              "browserTarget": "Shopping-App:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular-shopping:build"
+            "browserTarget": "Shopping-App:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "Angular-shopping-e2e": {
+    "Shopping-App-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular-shopping:serve"
+            "devServerTarget": "Shopping-App:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular-shopping:serve:production"
+              "devServerTarget": "Shopping-App:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "Angular-shopping"
+  "defaultProject": "Shopping-App"
 }
