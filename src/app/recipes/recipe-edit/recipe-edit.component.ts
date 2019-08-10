@@ -28,6 +28,11 @@ recipeForm : FormGroup;
     );
   }
 
+  onSubmit(){
+     console.log(this.recipeForm);
+  }
+
+  
   private initForm(){
  //const recipe= this.recipeService.getRecipe(this.id);
     let recipeName = '';
