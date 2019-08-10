@@ -32,6 +32,15 @@ recipeForm : FormGroup;
      console.log(this.recipeForm);
   }
 
+  onAddIngredients(){
+    (<FormArray>this.recipeForm.get('ingredients')).push(
+      new FormGroup({
+        'name' : new FormControl(),
+        'amount': new FormControl()
+      })
+    );
+  }
+
 
   private initForm(){
  //const recipe= this.recipeService.getRecipe(this.id);
