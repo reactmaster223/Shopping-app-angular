@@ -45,6 +45,11 @@ recipeForm : FormGroup;
      this.onCancel();
   }
 
+
+  onDeleteIngredients(index:number){
+  (<FormArray>this.recipeForm.get('ingredients')).removeAt(index);
+  }
+
   onAddIngredients(){
     (<FormArray>this.recipeForm.get('ingredients')).push(
       new FormGroup({
