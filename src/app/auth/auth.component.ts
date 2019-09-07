@@ -54,4 +54,8 @@ constructor(private authService:AuthService,private router:Router){
 
       form.reset();
     }
+
+    onHandleError(){
+      this.error = null;
+    }
 }
