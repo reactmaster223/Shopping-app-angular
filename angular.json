@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Shopping-App": {
+    "ng-complete-guide-update": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Shopping-App",
+            "outputPath": "dist/ng-complete-guide-update",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -59,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Shopping-App:build"
+            "browserTarget": "ng-complete-guide-update:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Shopping-App:build:production"
+              "browserTarget": "ng-complete-guide-update:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Shopping-App:build"
+            "browserTarget": "ng-complete-guide-update:build"
           }
         },
         "test": {
@@ -104,7 +104,7 @@
         }
       }
     },
-    "Shopping-App-e2e": {
+    "ng-complete-guide-update-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -113,11 +113,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Shopping-App:serve"
+            "devServerTarget": "ng-complete-guide-update:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Shopping-App:serve:production"
+              "devServerTarget": "ng-complete-guide-update:serve:production"
             }
           }
         },
@@ -133,5 +133,5 @@
       }
     }
   },
-  "defaultProject": "Shopping-App"
+  "defaultProject": "ng-complete-guide-update"
 }
