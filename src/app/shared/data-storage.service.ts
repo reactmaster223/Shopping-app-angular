@@ -31,14 +31,13 @@ export class DataStorageService {
       take(1),
       exhaustMap((user) => {
         return this.http.get<Recipe[]>(
-          "https://angular-31bdf-default-rtdb.firebaseio.com/recipes.json",
+          "https://ng-course-recipe-book-65f10.firebaseio.com/recipes.json",
           {
             params: new HttpParams().set("auth", user.token),
           }
         );
       }),
       map((recipes) => {
-        console.log(recipes);
         return recipes.map((recipe) => {
           return {
             ...recipe,
